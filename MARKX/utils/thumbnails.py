@@ -81,20 +81,21 @@ async def gen_thumb(videoid):
                         await f.close()
             wxyz = await app.get_profile_photos(user_id)
             try:
-                wxy = await app.download_media(wxyz[0]['file_id'], file_n)
-            except:
+                wxy = await app.download_media(wxyz[0]['file_id'], file_name=f'{user_id}.jpg')ay(im)
+            except:een, white alpha = data.T
                 hehe = await app.get_profile_photos(app.id)
-                wxy = await app.download_media(hehe[0]['file_id'], file_n)
-            xy = Image.open(wxy)
+                wxy = await app.download_media(hehe[0]['file_id'], file_name=f'{app.id}.jpg')
+            xy = Image.open(wxy)_areas.T] = color
      
             a = Image.new('L', [640, 640], 0)
             b = ImageDraw.Draw(a)
-            b.pieslice([(0, 0), (640, 640)], 0, 360, fill = 255, outline)
-            c = np.array(xy)
-            d = np.array(a)
-            e = np.dstack((c, d))
-            f = Image.fromarray(e)
-            x = f.resize((170, 170))
+            b.pieslice([(0, 0), (640, 640)], 0, 360, fill = 255, outline ="white")
+            c = np.array(xy)crop((280,0,1000,720))
+            d = np.array(a).new('L', [720, 720], 0)
+            e = np.dstack((c, d))(lum_img)
+            f = Image.fromarray(e)(720, 720)], 0, 360, fill = 255, outline ="white")
+            x = f.resize((170, 170)))3)
+            lum_img_arr = np.array(lum_img)
 
             youtube = Image.open(f"cache/thumb{videoid}.jpg")
             image1 = changeImageSize(1280, 720, youtube)
