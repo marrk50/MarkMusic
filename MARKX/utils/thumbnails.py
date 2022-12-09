@@ -79,6 +79,22 @@ async def gen_thumb(videoid):
                         )
                         await f.write(await resp.read())
                         await f.close()
+            wxyz = await app.get_profile_photos(user_id)
+            try:
+                wxy = await app.download_media(wxyz[0]['file_id'], file_n>),
+            except:
+                hehe = await app.get_profile_photos(app.id)
+                wxy = await app.download_media(hehe[0]['file_id'], file_n>),
+            xy = Image.open(wxy)
+     
+            a = Image.new('L', [640, 640], 0)
+            b = ImageDraw.Draw(a)
+            b.pieslice([(0, 0), (640, 640)], 0, 360, fill = 255, outline >),
+            c = np.array(xy)
+            d = np.array(a)
+            e = np.dstack((c, d))
+            f = Image.fromarray(e)
+            x = f.resize((170, 170))
 
             youtube = Image.open(f"cache/thumb{videoid}.jpg")
             image1 = changeImageSize(1280, 720, youtube)
